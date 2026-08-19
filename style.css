@@ -2776,372 +2776,275 @@ button {
 }
 
 /* =========================
-   PREMIUM CONTACT SECTION
+   DARK LUXURY CONTACT
 ========================= */
 
-.contact-premium {
+.luxury-contact {
     width: min(1200px, 90%);
-    margin: 140px auto 0;
+    margin: 130px auto 40px;
 }
 
-.contact-intro {
-    max-width: 700px;
-    margin-bottom: 55px;
-}
-
-.contact-intro h2 {
-    color: var(--espresso);
-    font-family: "Cormorant Garamond", serif;
-    font-size: clamp(52px, 7vw, 86px);
-    line-height: .88;
-    letter-spacing: -2px;
-    margin-bottom: 25px;
-}
-
-.contact-intro p {
-    max-width: 560px;
-    color: var(--muted);
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-
-/* MAIN PANEL */
-
-.contact-panel {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-    padding: 25px;
-
-    background: var(--espresso);
-    border-radius: 34px;
-
-    box-shadow: 0 25px 70px rgba(59, 33, 22, .18);
-}
-
-
-/* INFO SIDE */
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    padding: 25px;
-}
-
-.contact-info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 25px 10px;
-    border-bottom: 1px solid rgba(255,255,255,.12);
-}
-
-.contact-info-item:last-child {
-    border-bottom: 0;
-}
-
-.contact-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-
-    border: 1px solid rgba(255,255,255,.16);
-    border-radius: 50%;
-
-    color: #e4b987;
-    font-size: 21px;
-}
-
-.contact-info-item small {
-    display: block;
-    margin-bottom: 6px;
-
-    color: #d5a16e;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.contact-info-item h3 {
-    color: var(--white);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 28px;
-    line-height: 1.1;
-    margin-bottom: 5px;
-}
-
-.contact-info-item p {
-    color: rgba(255,255,255,.58);
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-
-/* MAP CARD */
-
-.contact-map-card {
+.luxury-card {
     position: relative;
-    min-height: 500px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 80px 60px;
+
+    text-align: center;
 
     overflow: hidden;
 
-    border-radius: 25px;
+    border-radius: 36px;
 
     background:
         radial-gradient(
-            circle at 50% 45%,
-            rgba(214,165,112,.25),
-            transparent 28%
+            circle at 50% 20%,
+            rgba(180, 125, 72, .18),
+            transparent 35%
         ),
         linear-gradient(
-            145deg,
-            #70462f,
-            #2b1810
+            135deg,
+            #2b1810,
+            #160c08
         );
+
+    border: 1px solid rgba(255,255,255,.09);
+
+    box-shadow:
+        0 30px 90px rgba(35, 17, 9, .25);
 }
 
-.contact-map-card::before {
+
+.luxury-card::before {
     content: "";
 
     position: absolute;
-    inset: 0;
+    inset: 22px;
 
-    background-image:
-        linear-gradient(
-            rgba(255,255,255,.035) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(255,255,255,.035) 1px,
-            transparent 1px
-        );
+    border: 1px solid rgba(218,170,112,.13);
 
-    background-size: 45px 45px;
+    border-radius: 27px;
+
+    pointer-events: none;
 }
 
-.map-glow {
-    position: absolute;
 
-    width: 220px;
-    height: 220px;
-
-    border-radius: 50%;
-
-    background: rgba(208,153,98,.13);
-
-    filter: blur(30px);
-}
-
-.map-pin {
+.brand-mark {
     position: relative;
-    z-index: 2;
-
-    width: 105px;
-    height: 105px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 25px;
+
     border-radius: 50%;
 
-    background: rgba(255,255,255,.08);
-    border: 1px solid rgba(255,255,255,.2);
+    border: 1px solid rgba(218,170,112,.45);
 
-    box-shadow:
-        0 0 0 14px rgba(255,255,255,.025),
-        0 0 0 28px rgba(255,255,255,.015);
-}
+    color: #e0b27c;
 
-.map-pin span {
-    color: var(--white);
     font-family: "Cormorant Garamond", serif;
-    font-size: 35px;
+
+    font-size: 34px;
     font-weight: 700;
-    letter-spacing: 2px;
-}
 
-.map-label {
-    position: relative;
-    z-index: 2;
-
-    margin-top: 35px;
-    text-align: center;
-}
-
-.map-label small {
-    display: block;
-
-    color: #d5a16e;
-    font-size: 10px;
-    font-weight: 700;
     letter-spacing: 3px;
 }
 
-.map-label strong {
-    display: block;
 
-    margin-top: 8px;
-
-    color: var(--white);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 27px;
-}
-
-.map-button {
+.luxury-card h2 {
     position: relative;
-    z-index: 2;
 
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
+    color: #fff8ef;
 
-    margin-top: 25px;
-    padding: 13px 21px;
+    font-family: "Cormorant Garamond", serif;
 
-    border: 1px solid rgba(255,255,255,.2);
-    border-radius: 999px;
+    font-size: clamp(45px, 6vw, 72px);
 
-    color: var(--white);
-    background: rgba(255,255,255,.08);
+    line-height: .95;
 
-    font-size: 12px;
-    font-weight: 700;
-
-    transition:
-        background .25s ease,
-        transform .25s ease;
-}
-
-.map-button:hover {
-    background: var(--caramel);
-    transform: translateY(-3px);
+    margin-bottom: 18px;
 }
 
 
-/* TRUST STRIP */
+.luxury-rating {
+    position: relative;
 
-.contact-trust {
+    color: #d9a15e;
+
+    font-size: 17px;
+
+    letter-spacing: 5px;
+}
+
+
+.luxury-rating span {
+    margin-left: 10px;
+
+    color: rgba(255,255,255,.75);
+
+    font-size: 14px;
+
+    letter-spacing: 0;
+}
+
+
+.luxury-info {
+    position: relative;
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
 
-    margin-top: 25px;
+    grid-template-columns: repeat(3, 1fr);
 
-    background: var(--white);
-    border-radius: 25px;
+    max-width: 850px;
 
-    box-shadow: var(--shadow);
+    margin: 55px auto 45px;
+
+    border-top: 1px solid rgba(255,255,255,.1);
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
-.contact-trust > div {
-    min-height: 125px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.luxury-info > div {
+    padding: 28px 20px;
 
-    text-align: center;
-
-    border-right: 1px solid #eee3d8;
+    border-right: 1px solid rgba(255,255,255,.1);
 }
 
-.contact-trust > div:last-child {
+
+.luxury-info > div:last-child {
     border-right: 0;
 }
 
-.contact-trust strong {
-    color: var(--espresso);
-    font-family: "Cormorant Garamond", serif;
-    font-size: 30px;
-    line-height: 1;
+
+.luxury-info span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #d9a15e;
+
+    font-size: 23px;
 }
 
-.contact-trust span {
+
+.luxury-info strong {
+    display: block;
+
+    color: #fff8ef;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 22px;
+}
+
+
+.luxury-info small {
+    display: block;
+
     margin-top: 5px;
 
-    color: #d09a58;
-    font-size: 13px;
-    font-weight: 700;
-}
+    color: rgba(255,255,255,.48);
 
-.contact-trust small {
-    margin-top: 3px;
+    font-size: 11px;
 
-    color: var(--muted);
-    font-size: 10px;
+    letter-spacing: .5px;
 }
 
 
-/* MOBILE */
+.luxury-button {
+    position: relative;
 
-@media (max-width: 850px) {
+    display: inline-flex;
 
-    .contact-premium {
-        margin-top: 100px;
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 15px 30px;
+
+    border-radius: 999px;
+
+    background: #d5a16b;
+
+    color: #24130c;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+
+.luxury-button:hover {
+    transform: translateY(-4px);
+
+    background: #e4b982;
+
+    box-shadow:
+        0 12px 30px rgba(213,161,107,.25);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+    .luxury-card {
+        padding: 65px 25px;
     }
 
-    .contact-panel {
+
+    .luxury-info {
         grid-template-columns: 1fr;
-        padding: 15px;
+
+        margin-top: 40px;
     }
 
-    .contact-info {
-        padding: 10px 15px;
-    }
 
-    .contact-map-card {
-        min-height: 430px;
-    }
-
-    .contact-trust {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-trust > div:nth-child(2) {
+    .luxury-info > div {
         border-right: 0;
+
+        border-bottom: 1px solid rgba(255,255,255,.1);
     }
 
-    .contact-trust > div:nth-child(-n+2) {
-        border-bottom: 1px solid #eee3d8;
-    }
-}
 
-
-@media (max-width: 520px) {
-
-    .contact-intro h2 {
-        font-size: 54px;
-    }
-
-    .contact-info-item h3 {
-        font-size: 24px;
-    }
-
-    .contact-trust {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-trust > div,
-    .contact-trust > div:nth-child(-n+2) {
-        border-right: 0;
-        border-bottom: 1px solid #eee3d8;
-    }
-
-    .contact-trust > div:last-child {
+    .luxury-info > div:last-child {
         border-bottom: 0;
     }
+
+
+    .luxury-card::before {
+        inset: 14px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .luxury-card h2 {
+        font-size: 48px;
+    }
+
+
+    .brand-mark {
+        width: 78px;
+        height: 78px;
+    }
+
 }
